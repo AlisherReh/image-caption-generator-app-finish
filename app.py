@@ -27,7 +27,7 @@ resnet50_model = ResNet50(weights="imagenet")
 resnet50_model = Model(inputs=resnet50_model.inputs, outputs=resnet50_model.layers[-2].output)
 
 # Load your trained model
-model = tf.keras.models.load_model('model_13.h5')
+model = tf.keras.models.load_model('model.h5')
 
 # Load the mappings between word and index
 with open("data/textFiles/word_to_idx.pkl", 'rb') as file:
