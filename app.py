@@ -26,7 +26,7 @@ if "uploader_key" not in st.session_state:
 resnet50_model = ResNet50(weights="imagenet")
 resnet50_model = Model(inputs=resnet50_model.inputs, outputs=resnet50_model.layers[-2].output)
 
-# Load your trained model
+# Load trained model
 model = tf.keras.models.load_model('model.h5')
 
 # Load the mappings between word and index
